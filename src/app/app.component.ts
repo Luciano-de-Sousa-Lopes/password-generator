@@ -43,7 +43,7 @@ export class AppComponent {
 
     let randomGeneratedPassword = '';
     for (let i = 0; i < this.length; i++) {
-      const index = Math.floor(Math.random() * passwordCharacters.length) + 1;
+      const index = Math.floor(Math.random() * passwordCharacters.length);
       randomGeneratedPassword += passwordCharacters[index];
     }
     this.password = randomGeneratedPassword;
